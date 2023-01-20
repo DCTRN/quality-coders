@@ -1,0 +1,80 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"[cpp]": {
+			"editor.defaultFormatter": "ms-vscode.cpptools"
+		},
+		"[json]": {
+			"editor.defaultFormatter": "vscode.json-language-features"
+		},
+		"C_Cpp.default.includePath": [
+			"${workspaceFolder}/**"
+		],
+		"C_Cpp.default.browse.path": [
+			"${workspaceFolder}"
+		],
+		"C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+		"C_Cpp.intelliSenseEngine": "default",
+		"C_Cpp.errorSquiggles": "enabled",
+		"C_Cpp.autoAddFileAssociations": true,
+		"C_Cpp.autocomplete": "default",
+		"C_Cpp.autocompleteAddParentheses": true,
+		"C_Cpp.codeAnalysis.clangTidy.enabled": true,
+		"C_Cpp.codeAnalysis.runAutomatically": true,
+		"C_Cpp.default.browse.databaseFilename": "/workspace/cpp_env_setup_vsc/.vscode/browse.vc.db",
+		"C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
+		"C_Cpp.default.compilerPath": "/usr/bin/gcc",
+		"C_Cpp.default.cppStandard": "c++17",
+		"C_Cpp.enhancedColorization": "enabled",
+		"C_Cpp.experimentalFeatures": "enabled",
+		"C_Cpp.formatting": "clangFormat",
+		"C_Cpp.intelliSenseCachePath": "/workspace/cpp_env_setup_vsc/.vscode/browse.vc.db",
+		"C_Cpp.intelliSenseCacheSize": 100000,
+		"C_Cpp.intelliSenseMemoryLimit": 16000,
+		"C_Cpp.intelliSenseEngineFallback": "enabled",
+		"C_Cpp.suggestSnippets": true,
+		"C_Cpp.workspaceParsingPriority": "high",
+		"cmake.generator": "Ninja"
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "cpp_env_setup_vsc-debug",
+				"type": "cppdbg",
+				"request": "launch",
+				"program": "${workspaceFolder}/build/cpp_env_setup_vsc",
+				"args": [],
+				"stopAtEntry": false,
+				"cwd": "${workspaceFolder}",
+				"setupCommands": [
+					{
+						"description": "Enable pretty-printing for gdb",
+						"text": "-enable-pretty-printing"
+					}
+				],
+				"externalConsole": false,
+				"MIMode": "gdb",
+				"logging": {
+					"engineLogging": false
+				},
+				"sourceFileMap": {
+					"${workspaceFolder}": {
+						"editorPath": "${workspaceFolder}",
+						"useForBreakpoints": "true"
+					}
+				}
+			}
+		]
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-vscode.cmake-tools"
+		]
+	}
+}
