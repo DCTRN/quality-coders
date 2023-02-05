@@ -1,0 +1,126 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"[cpp]": {
+			"editor.defaultFormatter": "ms-vscode.cpptools"
+		},
+		"[json]": {
+			"editor.defaultFormatter": "vscode.json-language-features"
+		},
+		"C_Cpp.default.includePath": [
+			"${workspaceFolder}/**"
+		],
+		"C_Cpp.default.browse.path": [
+			"${workspaceFolder}"
+		],
+		"C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+		"C_Cpp.intelliSenseEngine": "default",
+		"C_Cpp.errorSquiggles": "enabled",
+		"C_Cpp.autoAddFileAssociations": true,
+		"C_Cpp.autocomplete": "default",
+		"C_Cpp.autocompleteAddParentheses": true,
+		"C_Cpp.codeAnalysis.clangTidy.enabled": true,
+		"C_Cpp.codeAnalysis.runAutomatically": true,
+		"C_Cpp.default.browse.databaseFilename": "/workspace/cpp_lvalue_rvalue_references/.vscode/browse.vc.db",
+		"C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
+		"C_Cpp.default.compilerPath": "/usr/bin/gcc",
+		"C_Cpp.default.cppStandard": "c++17",
+		"C_Cpp.enhancedColorization": "enabled",
+		"C_Cpp.experimentalFeatures": "enabled",
+		"C_Cpp.formatting": "clangFormat",
+		"C_Cpp.intelliSenseCachePath": "/workspace/cpp_lvalue_rvalue_references/.vscode/browse.vc.db",
+		"C_Cpp.intelliSenseCacheSize": 100000,
+		"C_Cpp.intelliSenseMemoryLimit": 16000,
+		"C_Cpp.intelliSenseEngineFallback": "enabled",
+		"C_Cpp.suggestSnippets": true,
+		"C_Cpp.workspaceParsingPriority": "high",
+		"cmake.generator": "Ninja",
+		"files.associations": {
+			"array": "cpp",
+			"atomic": "cpp",
+			"bit": "cpp",
+			"*.tcc": "cpp",
+			"cctype": "cpp",
+			"clocale": "cpp",
+			"cmath": "cpp",
+			"cstdarg": "cpp",
+			"cstddef": "cpp",
+			"cstdint": "cpp",
+			"cstdio": "cpp",
+			"cstdlib": "cpp",
+			"cwchar": "cpp",
+			"cwctype": "cpp",
+			"deque": "cpp",
+			"unordered_map": "cpp",
+			"vector": "cpp",
+			"exception": "cpp",
+			"algorithm": "cpp",
+			"functional": "cpp",
+			"iterator": "cpp",
+			"memory": "cpp",
+			"memory_resource": "cpp",
+			"numeric": "cpp",
+			"optional": "cpp",
+			"random": "cpp",
+			"string": "cpp",
+			"string_view": "cpp",
+			"system_error": "cpp",
+			"tuple": "cpp",
+			"type_traits": "cpp",
+			"utility": "cpp",
+			"fstream": "cpp",
+			"initializer_list": "cpp",
+			"iosfwd": "cpp",
+			"iostream": "cpp",
+			"istream": "cpp",
+			"limits": "cpp",
+			"new": "cpp",
+			"ostream": "cpp",
+			"sstream": "cpp",
+			"stdexcept": "cpp",
+			"streambuf": "cpp",
+			"typeinfo": "cpp"
+		}
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "cpp_lvalue_rvalue_references-debug",
+				"type": "cppdbg",
+				"request": "launch",
+				"program": "${workspaceFolder}/build/cpp_lvalue_rvalue_references",
+				"args": [],
+				"stopAtEntry": false,
+				"cwd": "${workspaceFolder}",
+				"setupCommands": [
+					{
+						"description": "Enable pretty-printing for gdb",
+						"text": "-enable-pretty-printing"
+					}
+				],
+				"externalConsole": false,
+				"MIMode": "gdb",
+				"logging": {
+					"engineLogging": false
+				},
+				"sourceFileMap": {
+					"${workspaceFolder}": {
+						"editorPath": "${workspaceFolder}",
+						"useForBreakpoints": "true"
+					}
+				}
+			}
+		]
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-vscode.cmake-tools"
+		]
+	}
+}
